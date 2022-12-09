@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">STORMIEAPP</string>
+    <string name="title_home">Pemesanan</string>
+    <string name="title_dashboard">List Order</string>
+    <string name="title_notifications">Profil</string>
+    <string name="title_home_agen">Tambah Produk</string>
+    <string name="title_dashboard_agen">Produk Kamu</string>
+    <string name="tulis">Tulis disini...</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="car_name">Car Name</string>
+    <string name="car_price">Car Price</string>
+    <string name="car_desc">Car Desc</string>
+    <string name="car_owner">Car Owner</string>
+    <string name="dash_title">Daftar Order</string>
+    <string name="ringkasan_title">Ringkasan Pemesanan</string>
+    <string name="ringkasan_desc">Berikut pilihan kendaraan yang kamu pilih</string>
+    <string name="dash_desc">Informasi terkait daftar pemesananmu</string>
+    <string name="success_order_info">Berhasil disewa</string>
+    <string name="car_desc_lengkap">Car Desc Lengkap</string>
+    <string name="promo_desc">Rent Promo</string>
+    <string name="rent_vehicle">Sewa Kendaraan</string>
+    <string name="title_activity_ui_agen">uiAgen</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_update_produk">updateProduk</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="update_produk">Update Produk</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="pilih_tipe_akun">Pilih\nTipe Akun</string>
+    <string name="daftar">DAFTAR</string>
+    <string name="pelanggan">Pelanggan</string>
+    <string name="agen">Agen</string>
+    <string name="text_pelanggan">Sewa kendaraan listrik favorit mu!</string>
+    <string name="text_agen">Sewakan kendaraan listrik mu!</string>\
+
+    <string name="selamat_datang">Selamat Datang!</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="konfirmasi_password">Konfirmasi Password</string>
+    <string name="atau_daftar">atau daftar dengan</string>
+    <string name="sudah_punya">Sudah punya akun?</string>
+    <string name="masuk">Masuk</string>
+    <string name="splash_lorem_ipsum">Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit. Nunc\nvulputate libero et velit interdum, ac\naliquet odio mattis.</string>
+    <string name="halo">Halo!</string>
+    <string name="lupa_password">Lupa Password?</string>
+    <string name="atau_masuk">atau masuk dengan</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="title_activity_mainagen">MainagenActivity</string>
+</resources>

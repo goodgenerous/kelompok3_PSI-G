@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Masuk"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_Halo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/halo"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="57dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_lorem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat datang kembali, teman!"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_Halo"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_Halo"
+            android:layout_marginTop="21dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/grey"
+            app:boxBackgroundMode="outline"
+            app:hintEnabled="false"
+            app:startIconDrawable="@drawable/email"
+            app:layout_constraintTop_toBottomOf="@id/tv_lorem"
+            app:layout_constraintLeft_toLeftOf="@id/tv_lorem"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/grey"
+            app:boxBackgroundMode="outline"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/password"
+            app:layout_constraintTop_toBottomOf="@id/ti_email"
+            app:layout_constraintLeft_toLeftOf="@id/ti_email"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            >
+            <EditText
+                android:id="@+id/et_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_lupa_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lupa_password"
+            android:textColor="@color/blue"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintTop_toBottomOf="@id/ti_password"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="#2F2F2F"
+            android:text="@string/masuk"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_lupa_pass"
+            android:layout_marginTop="44dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            />
+
+        <View
+            android:id="@+id/v_line1"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/btn_masuk"
+            app:layout_constraintStart_toStartOf="@id/btn_masuk"
+            android:layout_marginTop="41dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_atau_masuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/atau_masuk"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toEndOf="@id/v_line1"
+            app:layout_constraintEnd_toStartOf="@id/v_line2"
+            app:layout_constraintTop_toBottomOf="@id/btn_masuk"
+            android:layout_marginTop="30dp"
+            />
+
+        <View
+            android:id="@+id/v_line2"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="41dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/btn_masuk"
+            app:layout_constraintTop_toBottomOf="@id/btn_masuk" />
+
+        <ImageView
+            android:id="@+id/iv_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/google"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/v_line1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="120dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/facebook"
+            app:layout_constraintStart_toEndOf="@id/iv_google"
+            app:layout_constraintTop_toTopOf="@id/iv_google"
+            android:layout_marginLeft="15dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/twitter"
+            app:layout_constraintTop_toTopOf="@id/iv_google"
+            app:layout_constraintStart_toEndOf="@id/iv_facebook"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_belum_akun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/belum_punya_akun"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="@id/iv_google"
+            app:layout_constraintTop_toBottomOf="@id/iv_facebook"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/blue"
+            app:layout_constraintTop_toTopOf="@id/tv_belum_akun"
+            app:layout_constraintStart_toEndOf="@id/tv_belum_akun"
+            android:layout_marginLeft="5dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
